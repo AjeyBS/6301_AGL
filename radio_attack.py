@@ -1,4 +1,4 @@
-import sys
+
 import requests
 import pprint
 
@@ -50,5 +50,4 @@ while True:
 
     else:
         print("Wrong option")
-
 print('Exiting radio controls')

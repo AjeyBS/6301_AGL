@@ -67,5 +67,5 @@ while True:
             else:
                 print("Wrong option")
 
-print('Exiting bluetooth media controls')
+print('Exiting')
 

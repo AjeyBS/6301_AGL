@@ -1,17 +1,22 @@
-# Generic Container with all scripts Example
+# Run Scripts Locally
+`pip install -r reqs.txt`
+
+`python HVAC_attack.py`
+
+# Generic Container with all scripts
 ## make container
-docker build -t emwoj/cs6301_hvac:latest .
+`docker build -t emwoj/cs6301_hvac:latest .`
 
 ## start container
-docker run -it emwoj/cs6301_hvac:latest /bin/sh
+`docker run -it emwoj/cs6301_hvac:latest /bin/sh`
 
 ## run scripts
-python HVAC_attack.py
+`python HVAC_attack.py`
 
-# Script Specific Container Example
+# Script Specific Container
 ## make container 
-docker build -t emwoj/cs6301_hvac:1.0 -f hvac/Dockerfile .
+`docker build -t emwoj/cs6301_hvac:1.0 -f hvac/Dockerfile .`
 
 ## start container
-docker run -i emwoj/cs6301_hvac:1.0
+`docker run -i emwoj/cs6301_hvac:1.0`
 

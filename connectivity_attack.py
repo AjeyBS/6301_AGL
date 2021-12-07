@@ -18,24 +18,21 @@ while True:
                 """)
 
             if sel1 == "1":
-                vol = input("Enter volume to set(0-100): ")
-                vol = int(vol) / 100
-
-                link = "http://" + ip + "30030/api/network-manager/disable_technology"
+                link = "http://" + ip + ":30030/api/network-manager/disable_technology"
                 data = '{"technology":"wifi"}'
                 response = requests.post(link, headers=headers, data=data)
 
                 pp.pprint(response.json())
 
             elif sel1 == "2":
-                link = "http://" + ip + "30030/api/network-manager/disable_technology"
+                link = "http://" + ip + ":30030/api/network-manager/disable_technology"
                 data = '{"technology":"bluetooth"}'
                 response = requests.post(link, headers=headers, data=data)
 
                 pp.pprint(response.json())
 
             elif sel1 == "3":
-                link = "http://" + ip + "30030/api/network-manager/enable_technology"
+                link = "http://" + ip + ":30030/api/network-manager/enable_technology"
                 data = '{"technology":"bluetooth"}'
                 response = requests.post(link, headers=headers, data=data)
 

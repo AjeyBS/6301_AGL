@@ -5,10 +5,10 @@
 
 # Generic Container with all scripts
 ## make container
-`docker build -t emwoj/cs6301_hvac:latest .`
+`docker build -t emwoj/cs6301_proj:latest .`
 
 ## start container
-`docker run -it emwoj/cs6301_hvac:latest /bin/sh`
+`docker run -it emwoj/cs6301_proj:latest /bin/sh`
 
 ## run scripts
 `python HVAC_attack.py`
